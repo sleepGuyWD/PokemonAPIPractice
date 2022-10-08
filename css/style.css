@@ -16,7 +16,7 @@ img{
 }
 
 html {
-  background-image: url('/100Devs/class26-materials/api-template/img/pkmn.jpg');
+  background-image: url('../img/pkmn.jpg');
 
   background-size: cover;
 }
