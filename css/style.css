@@ -1,0 +1,85 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+html {
+  background-image: url('/100Devs/class26-materials/api-template/img/pkmn.jpg');
+
+  background-size: cover;
+}
+
+main {
+  width: 1000px;
+  height: 800px;
+  background: #fffac0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  border-radius: 50px;
+  box-shadow: 0 0 8px black;
+}
+
+#titleSection {
+  height: 10%;
+  text-align: center;
+  background:#73b9d7;
+  border-radius: 50px 50px 0 0;
+  color: #ffd79a;
+  font-size: 50px;
+}
+
+#titleSection,
+#nameSection,
+#imgSection,
+#actionSection {
+  width: 100%;
+  text-align: center;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#imgSection {
+  flex-direction: row;
+  background-color: #ffd79a;
+}
+
+.sprites {
+  width: 100%;
+}
+
+#actionSection {
+  background: #9de6e8;
+  border-radius: 0 0 50px 50px;
+}
+
+#nameSection {
+  
+}
+
+#pkmnName {
+  font-size: 40px;
+  color: #73b9d7;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
