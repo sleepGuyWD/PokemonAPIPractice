@@ -14,11 +14,19 @@ img{
   display: block;
   margin: 0 auto;
 }
-
 html {
+  width: 2200px;
+  height: 1950px;
+  
+}
+#mainBack {
   background-image: url('../img/pkmn.jpg');
-
   background-size: cover;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+
 }
 
 main {
@@ -28,7 +36,8 @@ main {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+ 
+
   border-radius: 50px;
   box-shadow: 0 0 8px black;
 }
@@ -68,14 +77,36 @@ main {
   border-radius: 0 0 50px 50px;
 }
 
-#nameSection {
-  
-}
 
 #pkmnName {
   font-size: 40px;
   color: #73b9d7;
 }
+
+#housePet {
+  width: 100%;
+  height: 800px;
+  background: #fffac0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+ 
+  
+  box-shadow: 0 0 8px black;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+#sectionTitle.Housepet {
+  height: 20%;
+}
+
+#housePetImg {
+  height: 80%;
+}
+
+
 
 
 

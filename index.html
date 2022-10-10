@@ -12,29 +12,45 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<main>
-			<section id="titleSection">
-			<div id="titleHolder">
-				<h1>Pokemon Sprites!</h1>
-			</div>
-			</section>
-			<section id="nameSection">
-				<div id="pkmnName">
-					<h2>Name</h2>
+		<section id="mainBack">
+			<main>
+				<section id="titleSection">
+				<div id="titleHolder">
+					<h1>Pokemon Sprites!</h1>
 				</div>
-			</section>
-			<section id="imgSection">
-				<img class="sprites" id="frontSprite" src="" alt="">
-				<img class="sprites" id="backSprite" src="" alt="">
-				<img class="sprites" id="frontSpriteShiny" src="" alt="">
-				<img class="sprites" id="backSpriteShiny" src="" alt="">
-		  </section>
-			<section id="actionSection">
-				<input placeholder="Enter Pokemon's #" type="text" name="" value="">
-				<button type="button" name="button">Get Pokemon</button>
-				<button id="random" type="button" name="button">Random!</button>
-	  	</section>
-		</main>
+				</section>
+				<section id="nameSection">
+					<div id="pkmnName">
+						<h2>Enter or Randomize Pokemon below :)</h2>
+					</div>
+				</section>
+				<section id="imgSection">
+					<img class="sprites" id="frontSprite" src="" alt="">
+					<img class="sprites" id="backSprite" src="" alt="">
+					<img class="sprites" id="frontSpriteShiny" src="" alt="">
+					<img class="sprites" id="backSpriteShiny" src="" alt="">
+				</section>
+				<section id="actionSection">
+					<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
+					<button id="getNumber" type="button" name="button">Get Pokemon</button>
+					<button id="random" type="button" name="button">Random!</button>
+				</section>
+			</main>
+		</section>
+		<section id="housePet">
+			<div class="sectionTitle Housepet">
+				<h2>Which Pokemon Can Be A House Pet?</h2>
+			</div>
+			<div id="inputSection">
+				<input id="housePetInput" type="text" name="" value="">
+				<button id="housePetButton" type="button" name="button">Check Pokemon</button>
+			</div>
+			<h2 id="housePetDesc">Enter a Pokemon in the box above and click the button to find out! We'll check its height, weight, and associated type(s) to make sure it's safe for your home!</h2>
+			<img id="housePetImg" src="img/pokemon_starters.webp" alt="housePetImg">
+			<h2 id="pokeName"></h3>
+			<h3>Dangerous Types: 'Fire', 'Electric', 'Fighting', 'Poison', 'Ghost'</h3>
+			<h3>(A height over 7 feet and weight of more than 400 pounds are not considered suitable for a pet.)</h3>
+		</section>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
