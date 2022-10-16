@@ -15,7 +15,7 @@ function getFetch(){
         document.querySelector('#backSprite').src = data.sprites.back_default
         document.querySelector('#frontSpriteShiny').src = data.sprites.front_shiny
         document.querySelector('#backSpriteShiny').src = data.sprites.back_shiny
-        document.querySelector('h2').innerText = data.name
+        document.querySelector('#spriteName').innerText = data.name
       })
       .catch(err => {
           console.log(`error ${err}`)
@@ -34,7 +34,7 @@ function getFetch2(){
     document.querySelector('#backSprite').src = data.sprites.back_default
     document.querySelector('#frontSpriteShiny').src = data.sprites.front_shiny
     document.querySelector('#backSpriteShiny').src = data.sprites.back_shiny
-    document.querySelector('h2').innerText = data.name
+    document.querySelector('#spriteName').innerText = data.name
 })
 .catch(err => {
     console.log(`error ${err}`)

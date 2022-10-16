@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 	</head>
 	<body>
 		<nav>
@@ -19,27 +20,36 @@
 		<main>
 			<section id="topHalf">
 				<section class="mainContainer top">
-					<section id="infoLeft">
-						<h2>Find original Pokemon Game Sprites!</h2>
-						<p>Using a Pokemon API, your're able to perform a complex action with a simple click!</p>
-						<div id="spriteInputSec">
-							<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
-							<button id="getNumber" type="button" name="button">Get Pokemon</button>
-							<button id="random" type="button" name="button">Randomize!</button>
+					<div id="infoContainerMom">
+						<div id="infoContainer"> 
+							<section id="infoLeft">
+								<h2>Find original Pokemon Game Sprites!</h2>
+								<h3 id="spriteName"></h3>
+								<p>Using a Pokemon API, your're able to perform a complex action with a simple click!</p>
+								<div id="spriteInputSec">
+									<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
+									<button id="getNumber" type="button" name="button">Get Pokemon</button>
+									<button id="random" type="button" name="button">Randomize!</button>
+								</div>
+								<span>Enjoy your sprites!</span>
+							</section>
 						</div>
-						<span>Enjoy your sprites!</span>
-					</section>
+					</div>
 					<section id="spriteHolder">
-						<section class="spriteSpot 1"><img class="sprites" id="frontSprite" src="" alt=""></section>
-						<section class="spriteSpot 2"><img class="sprites" id="backSprite" src="" alt=""></section>
-						<section class="spriteSpot 3"><img class="sprites" id="frontSpriteShiny" src="" alt=""></section>
-						<section class="spriteSpot 4"><img class="sprites" id="backSpriteShiny" src="" alt=""></section>
+						<section class="spriteSpot one"><img class="sprites" id="frontSprite" src="img/whosThatPkmon.webp" alt=""></section>
+						<section class="spriteSpot two"><img class="sprites" id="backSprite" src="img/whosThatPkmon.webp" alt=""></section>
+						<section class="spriteSpot three"><img class="sprites" id="frontSpriteShiny" src="img/whosThatPkmon.webp" alt=""></section>
+						<section class="spriteSpot four"><img class="sprites" id="backSpriteShiny" src="img/whosThatPkmon.webp" alt=""></section>
 					</section>
 				</section>
-				<img src="/PokemonAPIPractice/img/char-eevee.png" alt="Eevee">
+				<section id="eeveeHolder">
+					<img id="bigPkmn" src="/PokemonAPIPractice/img/char-eevee.png" alt="Eevee">
+			  </section>
 			</section>
 			<section id="botHalf">
-				<img src="/PokemonAPIPractice/img/Char-pikachu.webp" alt="">
+				<section id="pikachuHolder">
+					<img id="bigPkmn" src="/PokemonAPIPractice/img/Char-pikachu.webp" alt="">
+				</section>
 				<section class="mainContainer bot">
 					<section class="botMain">
 						<section id="houseImgHolder">

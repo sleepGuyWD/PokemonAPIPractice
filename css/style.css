@@ -1,12 +1,15 @@
-* {
-  margin: 0;
-}
-html {
-  width: 100%;
-  height: 100%;
+* { 
   margin: 0;
   padding: 0;
+  box-sizing: border-box; 
+}
+html {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
+  
 }
 
 nav {
@@ -14,7 +17,7 @@ nav {
   height: 54px;
   background: #405559;
   display: flex;
-
+  box-shadow: 1px 2px 20px black;
   align-items: center;
 }
 
@@ -22,9 +25,153 @@ nav>h3{
   padding-left: 2rem;
   color: #EDEDED;
   font-size: 20px;
-  letter-spacing: .2rem;
+  letter-spacing: .15rem;
+  
 }
 
 main {
   background-image: url('/PokemonAPIPractice/img/pkmn.jpg');
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+#topHalf,
+#botHalf {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+}
+
+.mainContainer {
+  min-height: 98%;
+  width: 70%;
+  border: 4px solid #68868C;
+  background-color: #EDEDED;
+  border-radius: 7rem;
+  box-shadow: 0 5px 15px black;
+}
+
+.mainContainer.top {
+  display: flex;
+  justify-content: space-around;
+}
+
+#infoLeft,
+#spriteHolder {
+  width: 47%;
+}
+
+#infoContainerMom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #405559;
+  width: 70%;
+ 
+}
+
+#infoContainer {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#infoLeft {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#infoLeft > h2 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#spriteHolder {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 3rem;
+  
+}
+
+.spriteSpot {
+  height: 50%;
+  width: 50%;
+  flex-wrap: wrap;
+  
+}
+
+.sprites {
+  width: 100%;
+  height: 98%;
+  border-radius: 55%;
+  border: 5px solid #405559;
+  box-shadow: 0 0 25px #68868C;
+  background: #68868C;
+  min-width: 300px;
+}
+
+#spriteInput {
+  width: 40%;
+  height: 30px;
+  border: none;
+  border-radius: 35px;
+  text-align: center;
+  color: #405559;
+  box-shadow: 0 0 5px black;
+ 
+}
+
+#getNumber,
+#random {
+  width: 20%;
+  height: 30px;
+  border-radius: 35px;
+  text-align: center;
+  background-color: #405559;
+  border: 1px solid #405559;
+  color: #EDEDED;
+  border: 2px solid #405559;
+  box-shadow: 0 0 8px #68868C;
+  letter-spacing: .2rem;
+  min-width: 150px;
+}
+
+#getNumber:hover,
+#random:hover {
+  cursor: pointer;
+  background-color: #68868C;
+  color: #EDEDED;
+  border: 1px solid #405559;
+}
+
+
+.mainContainer.bot {
+
+}
+
+body {
+  min-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#bigPkmn {
+  max-width: 100%;
+  box-shadow: 0 0px 15px black;
+  border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 1440px) and (max-width: 2048px) {
+  html {
+    width: 100%;
+    height: 100%;
+  }
 }
