@@ -169,7 +169,8 @@ min-width: 150px;
 }
 
 #getNumber:hover,
-#random:hover {
+#random:hover,
+#housePetButton:hover {
   cursor: pointer;
   background-color: #68868C;
   color: #EDEDED;
