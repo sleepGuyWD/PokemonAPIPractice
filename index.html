@@ -5,13 +5,74 @@
     	<meta name="description" content="This is where your description goes">
     	<meta name="keywords" content="one, two, three">
 
-		<title>PKMN Sprites</title>
+		<title>Pkmn Sprite and Home Check</title>
 
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<nav>
+			<h3>Pokemon Sprite and Poke-Proof Checker</h3>
+		</nav>
+		<main>
+			<section id="topHalf">
+				<section class="mainContainer top">
+					<section id="infoLeft">
+						<h2>Find original Pokemon Game Sprites!</h2>
+						<p>Using a Pokemon API, your're able to perform a complex action with a simple click!</p>
+						<div id="spriteInputSec">
+							<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
+							<button id="getNumber" type="button" name="button">Get Pokemon</button>
+							<button id="random" type="button" name="button">Randomize!</button>
+						</div>
+						<span>Enjoy your sprites!</span>
+					</section>
+					<section id="spriteHolder">
+						<section class="spriteSpot 1"><img class="sprites" id="frontSprite" src="" alt=""></section>
+						<section class="spriteSpot 2"><img class="sprites" id="backSprite" src="" alt=""></section>
+						<section class="spriteSpot 3"><img class="sprites" id="frontSpriteShiny" src="" alt=""></section>
+						<section class="spriteSpot 4"><img class="sprites" id="backSpriteShiny" src="" alt=""></section>
+					</section>
+				</section>
+				<img src="/PokemonAPIPractice/img/char-eevee.png" alt="Eevee">
+			</section>
+			<section id="botHalf">
+				<img src="/PokemonAPIPractice/img/Char-pikachu.webp" alt="">
+				<section class="mainContainer bot">
+					<section class="botMain">
+						<section id="houseImgHolder">
+							<img id="housePetImg" src="img/pokemon_starters.webp" alt="housePetImg">
+							<h3 id="pokeName"></h3>
+						</section>
+						<h2 id="housePetDesc">Is your home Pokemon-Proof?</h2>
+						<div id="inputSection">
+							<input id="housePetInput" type="text" name="" value="">
+							<button id="housePetButton" type="button" name="button">Check Pokemon</button>
+						</div>
+						<span>Dangerous Pokemon Types:</span>
+						<ol>
+							<li>Fire</li>
+							<li>Electric</li>
+							<li>Fighting</li>
+							<li>Poison</li>
+							<li>Ghost</li>
+						</ol>
+						<span>Height/Weight Warning:</span>
+						<p>A height over 7' and/or more than 400 lbs are not considered suitable for households.</p>
+					</section>
+				</section>
+			</section>
+
+		</main>
+
+
+
+
+
+
+
+		<!---
 		<section id="mainBack">
 			<main>
 				<section id="titleSection">
@@ -25,15 +86,15 @@
 					</div>
 				</section>
 				<section id="imgSection">
-					<img class="sprites" id="frontSprite" src="" alt="">
-					<img class="sprites" id="backSprite" src="" alt="">
-					<img class="sprites" id="frontSpriteShiny" src="" alt="">
-					<img class="sprites" id="backSpriteShiny" src="" alt="">
+					
+					
+					
+					
 				</section>
 				<section id="actionSection">
-					<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
-					<button id="getNumber" type="button" name="button">Get Pokemon</button>
-					<button id="random" type="button" name="button">Random!</button>
+					
+					
+					
 				</section>
 			</main>
 		</section>
@@ -42,15 +103,15 @@
 				<h2>Which Pokemon Can Be A House Pet?</h2>
 			</div>
 			<div id="inputSection">
-				<input id="housePetInput" type="text" name="" value="">
-				<button id="housePetButton" type="button" name="button">Check Pokemon</button>
+				
 			</div>
-			<h2 id="housePetDesc">Enter a Pokemon in the box above and click the button to find out! We'll check its height, weight, and associated type(s) to make sure it's safe for your home!</h2>
+			<h2 >Enter a Pokemon in the box above and click the button to find out! We'll check its height, weight, and associated type(s) to make sure it's safe for your home!</h2>
 			<img id="housePetImg" src="img/pokemon_starters.webp" alt="housePetImg">
-			<h2 id="pokeName"></h3>
+			
 			<h3>Dangerous Types: 'Fire', 'Electric', 'Fighting', 'Poison', 'Ghost'</h3>
 			<h3>(A height over 7 feet and weight of more than 400 pounds are not considered suitable for a pet.)</h3>
 		</section>
+	-->
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
