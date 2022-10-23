@@ -18,62 +18,86 @@
 			<h3>Pokemon Sprite and Poke-Proof Checker</h3>
 		</nav>
 		<main>
-			<section id="topHalf">
-				<section class="mainContainer top">
-					<div id="infoContainerMom">
-						<div id="infoContainer"> 
-							<section id="infoLeft">
-								<h2>Find original Pokemon Game Sprites!</h2>
-								<h3 id="spriteName"></h3>
-								<p>Using a Pokemon API, your're able to perform a complex action with a simple click!</p>
-								<div id="spriteInputSec">
-									<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
-									<button id="getNumber" type="button" name="button">Get Pokemon</button>
-									<button id="random" type="button" name="button">Randomize!</button>
-								</div>
-								<span>Enjoy your sprites!</span>
-							</section>
+			<div id="topContainer">
+				<section id="topHalf">
+					<section class="mainContainer top">
+						<div id="infoContainerMom">
+							<div id="infoContainer"> 
+								<section id="infoLeft">
+									<h2>Find original Pokemon Game Sprites!</h2>
+									<h3 id="spriteName"></h3>
+									<p>Using a Pokemon API, your're able to perform a complex action with a simple click!</p>
+									<div id="spriteInputSec">
+										<input id="spriteInput" placeholder="Enter Pokemon's name or #" type="text" name="" value="">
+										<button id="getNumber" type="button" name="button">Get Pokemon</button>
+										<button id="random" type="button" name="button">Randomize!</button>
+									</div>
+									<span>Enjoy your sprites!</span>
+								</section>
+							</div>
 						</div>
-					</div>
-					<section id="spriteHolder">
-						<section class="spriteSpot one"><img class="sprites" id="frontSprite" src="img/whosThatPkmon.webp" alt=""></section>
-						<section class="spriteSpot two"><img class="sprites" id="backSprite" src="img/whosThatPkmon.webp" alt=""></section>
-						<section class="spriteSpot three"><img class="sprites" id="frontSpriteShiny" src="img/whosThatPkmon.webp" alt=""></section>
-						<section class="spriteSpot four"><img class="sprites" id="backSpriteShiny" src="img/whosThatPkmon.webp" alt=""></section>
+						<section id="spriteHolder">
+							<div class="row Top">
+								<section class="spriteSpot one">
+									<img class="sprites" id="frontSprite" src="img/whosThatPkmon.webp" alt="">
+								</section>
+								<section class="spriteSpot two">
+									<img class="sprites" id="backSprite" src="img/whosThatPkmon.webp" alt="">
+								</section>
+							</div>
+							<div class="row Bot">
+								<section class="spriteSpot three">
+									<img class="sprites" id="frontSpriteShiny" src="img/whosThatPkmon.webp" alt="">
+								</section>
+								<section class="spriteSpot four">
+									<img class="sprites" id="backSpriteShiny" src="img/whosThatPkmon.webp" alt="">
+								</section>
+							</div>
+						</section>
 					</section>
 				</section>
 				<section id="eeveeHolder">
-					<img id="bigPkmn" src="/PokemonAPIPractice/img/char-eevee.png" alt="Eevee">
-			  </section>
-			</section>
-			<section id="botHalf">
-				<section id="pikachuHolder">
-					<img id="bigPkmn" src="/PokemonAPIPractice/img/Char-pikachu.webp" alt="">
+					<img class="bigPkmn e" src="/PokemonAPIPractice/img/char-eevee.png" alt="Eevee">
 				</section>
-				<section class="mainContainer bot">
-					<section class="botMain">
-						<section id="houseImgHolder">
-							<img id="housePetImg" src="img/pokemon_starters.webp" alt="housePetImg">
+			</div>
+			<div id="botContainer">
+				<section id="pikachuHolder">
+					<img class="bigPkmn p" src="/PokemonAPIPractice/img/Char-pikachu.webp" alt="Pikachu">
+				</section>
+				<section id="botHalf">
+					<section class="mainContainer bot">
+						<section class="botMain">
+							<section id="houseImgHolder">
+								<img id="housePetImg" src="img/pokemon_starters.webp" alt="housePetImg">
+							</section>
+							<h3 id="pokeName"></h3>
+							<h2 id="housePetDesc">Is your home Pokemon-Proof?</h2>
+							<div id="botInfoSec">
+								<div id="inputSection">
+									<input placeholder="Enter Pokemon's name or #" id="housePetInput" type="text" name="" value="">
+									<button id="housePetButton" type="button" name="button">Check Pokemon</button>
+								</div>
+								<div class="caution">
+									<div id="danger">
+										<span>Dangerous Pokemon Types:</span>
+										<ol>
+											<li>Fire</li>
+											<li>Electric</li>
+											<li>Fighting</li>
+											<li>Poison</li>
+											<li>Ghost</li>
+										</ol>
+									</div>
+									<div id="dangerHWeight">
+										<span>Height/Weight Warning:</span>
+										<p>A height over 7' and/or more than 400 lbs are not considered suitable for households.</p>
+									</div>
+								</div>
+						  </div>
 						</section>
-						<h3 id="pokeName"></h3>
-						<h2 id="housePetDesc">Is your home Pokemon-Proof?</h2>
-						<div id="inputSection">
-							<input placeholder="Enter Pokemon's name or #" id="housePetInput" type="text" name="" value="">
-							<button id="housePetButton" type="button" name="button">Check Pokemon</button>
-						</div>
-						<span>Dangerous Pokemon Types:</span>
-						<ol>
-							<li>Fire</li>
-							<li>Electric</li>
-							<li>Fighting</li>
-							<li>Poison</li>
-							<li>Ghost</li>
-						</ol>
-						<span>Height/Weight Warning:</span>
-						<p>A height over 7' and/or more than 400 lbs are not considered suitable for households.</p>
 					</section>
 				</section>
-			</section>
+			</div>
 		</main>
 		<footer>
 			<img src="/PokemonAPIPractice/img/pkmnLogo.png" alt="">
